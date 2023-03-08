@@ -23,7 +23,7 @@ class KPDetection:
         self.person_bboxes = None
 
     def init_model(self):
-        onnx_path = 'weights/keypoints.torch'
+        onnx_path = '/content/drive/MyDrive/Colab Notebooks/STAGIROVKI/CV/weights/keypoints.torch'
         print(f"Load {onnx_path}")
         self.model = torch.jit.load(onnx_path)
 
